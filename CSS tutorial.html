@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+     <!--This is external CSS Link-->
+     <link rel="stylesheet" href="CSSPrac.css">
+
+     <!--This is external web safe font link-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+
+    <!--This is for Element Selector-->
+    <style>
+        p.redelement{
+            border: 2px solid blue;
+            color: white;
+            background-color: black;
+        }
+
+       /*Class Selector*/ 
+       .redelement{
+       color: red;
+       } 
+       .blueclass{
+        background-color:blue ;
+       }
+
+       /*Id Selector*/
+       #purp{
+        background-color: rgb(255, 102, 0);
+        color: yellow;
+
+       }
+
+       /*Grouping selector*/
+       footer,span.redelement{
+        background-color: rgb(214, 48, 170);
+       }
+
+       #h1sel{
+        text-align: center;
+       }
+    </style>
+
+
+
+    <!--This is for CSS Fonts-->
+    <style>
+        #fontwala{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 33px; /* 1 pixel is 1/96th of an inch */
+            line-height: 1.3em;
+            
+        }
+
+        span{
+            font-weight: bold;
+        }
+    </style>
+
+
+    
+    <!--This is for CSS Colors-->
+    <Style>
+      #colorPara1{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        color: blueviolet; /*Color by name*/
+      }
+
+      #colorPara2{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        color: rgb(0, 255, 0);    /*Color by rgb*/
+      }
+
+      #colorPara3{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        color: #ff57ff;      /*color by hex*/
+      }
+    </Style>
+
+    
+   <!--This is for CSS Height, width, border and Background-->
+   <style>
+    #firstPara{
+        background-color: red;
+        height: 100px;
+        width: 455px;
+        border-width: 4px;
+        border-color: green;
+        border-style: solid; 
+        border-radius: 11px;
+    }
+    #secondPara{
+        background-color: rgb(0, 245, 53);
+        height: 100px;
+        width: 455px;
+        border-top: 6px solid rgb(4, 0, 254);;
+        border-left: 6px solid rgb(4, 0, 254);
+        border-right: 6px solid rgb(4, 0, 254);
+        border-bottom: 6px solid rgb(4, 0, 254);
+        border-top-left-radius: 11px; 
+    }
+
+    #thirdPara{    
+          
+           height: 148px;
+           width: 455px;
+           border: 2px solid red;
+           background-image: url(https://www.codewithharry.com/img/logo-blue.png);
+           background-repeat: no-repeat;
+           background-position: center;
+           
+    }
+   </style>
+
+   <!--This is for Box Model-->
+   <style>
+    .container{
+        background-color: rgb(167, 165, 221);
+        border: 3px solid blue;
+       /* padding-top: 78px;
+        padding-bottom: 78px;
+        padding-left: 34px;
+        margin: 34px;*/
+
+        /*Another way of padding*/
+
+       /* padding: 23px 56px 6px 70px; */
+
+        /*padding: y(top/bottom) x(left/right)*/
+        padding: 34px 19px;
+        margin: 14px 19px;
+        border-radius: 23px;
+        width: 533px;
+        box-sizing: border-box;
+    }
+   </style>
+   
+</head>
+<body>
+    <!--CSS Selector with id and Classes-->
+    <h1 id="h1sel">This is a CSS Selectors</h1>
+    <p class="redelement">This will show you how to use CSS</p>
+    <p id="redkardo" class="redelement blueclass">This is second paragraph</p>
+    <div>
+        <p id ="purp">This is third Paragraph</p>
+    </div>
+    <span class="redelement">This is span</span>
+    <footer>This is footer</footer>
+    
+
+
+    <!--CSS Fonts-->  
+    <div>
+        <h1>This is CSS Fonts</h1>
+    </div>
+    <div>
+        <p id="fontwala">Today we are going to play with <span>Fonts</span> in CSS</p>
+    </div>
+
+
+
+    <!--CSS Colors-->
+    <div>
+        <h1>This is CSS Colors </h1>
+    </div>
+    <div>
+     <p id="colorPara1">This is 1st paragraph for testing colors</p>
+    </div>
+    <div>
+     <p id="colorPara2">This is 2nd paragraph for testing colors</p>
+    </div>
+    <div>
+     <p id="colorPara3">This is 3rd paragraph for testing colors</p>
+    </div>
+
+
+    <!--Height, width, border and Background-->
+    <div>
+        <h1>This is CSS Height, width, border and Background</h1>
+    </div>
+    <div>
+        <p id="firstPara">This is first Paragraph</p>
+        <p id="secondPara">This is second Paragraph</p>
+        <p id="thirdPara">This is third Paragraph</p>
+    </div>
+    <br>
+
+    <!--Box Model-->
+    <h1>This is CSS Box Model</h1>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id ="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod hic iure amet, ullam accusamus eligendi necessitatibus iusto magni minus soluta blanditiis voluptatum, iste unde laboriosam doloribus eius pariatur vel natus reprehenderit explicabo.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id ="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod hic iure amet, ullam accusamus eligendi necessitatibus iusto magni minus soluta blanditiis voluptatum, iste unde laboriosam doloribus eius pariatur vel natus reprehenderit explicabo.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id ="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod hic iure amet, ullam accusamus eligendi necessitatibus iusto magni minus soluta blanditiis voluptatum, iste unde laboriosam doloribus eius pariatur vel natus reprehenderit explicabo.</p>
+    </div>
+</body>
+</html>

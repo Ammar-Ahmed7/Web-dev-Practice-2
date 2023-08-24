@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice</title>
+  </head>
+  <body>
+      
+      <!--Basic Elements-->
+        <h1>CarPhotos</h1>
+        <h2>CarPhotosInfo</h2>
+        <p>
+          See more
+          <a href="https://unsplash.com/s/photos/cars" target="_blank"
+            >car photos</a
+          >
+          in our gallery
+        </p>
+        <figure>
+          <a href="https://unsplash.com/s/photos/cars"
+            ><img
+              src="peter-broomfield-m3m-lnR90uM-unsplash.jpg"
+              alt="Car photo"
+              width="500"
+              height="400"
+          /></a>
+        </figure>
+      
+
+      <!--HTML LISTS-->
+      
+        <h2>Car Lists</h2>
+        <h3>Car stuff</h3>
+
+        <ul>
+          <li>Engine</li>
+          <li>Tyres</li>
+        </ul>
+
+        <ul type="square">
+          <li>Engine</li>
+          <li>Tyres</li>
+        </ul>
+
+        <ul type="circle">
+          <li>Engine</li>
+          <li>Tyres</li>
+        </ul>
+
+        <figure>
+          <img
+            src="automobile-g3527ea719_1280.jpg"
+            alt="automobile"
+            width="500"
+            height="400"
+          />
+          <figcaption>Auston Martin <em>Black Edition</em></figcaption>
+        </figure>
+
+        <h3>Top 3 cars</h3>
+        <ol>
+          <li>Lambo</li>
+          <li>Ferrari</li>
+          <li>McLaren</li>
+          <ol>
+            <li>Fast</li>
+            <li>Combustion</li>
+            <li>Slick</li>
+          </ol>
+        </ol>
+
+        <ol type="I">
+          <li>Lambo</li>
+          <li>Ferrari</li>
+          <li>McLaren</li>
+        </ol>
+
+        <ol type="A">
+          <li>Lambo</li>
+          <li>Ferrari</li>
+          <li>McLaren</li>
+        </ol>
+
+        <figure>
+          <p>Lambo is the <strong>best</strong></p>
+        </figure>
+
+        <!--HTML TABlES-->
+        <h2>HTML Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Ammar</td>
+              <td>3233</td>
+              <td>CEO</td>
+            </tr>
+
+            <tr>
+              <td>Zaman</td>
+              <td>342</td>
+              <td>Manager</td>
+            </tr>
+
+            <tr>
+              <td>Asad</td>
+              <td>2342</td>
+              <td>Employee</td>
+            </tr>
+          </tbody>
+        </table>
+     
+
+      
+        <br />
+
+        <!-- HTML FORMS -->
+        <h2>HTML FORMS</h2>
+        <form action="backend.php">
+          <div>Name: <input type="text" name="myName" /></div>
+          <br />
+
+          <div>Role: <input type="text" name="myRole" /></div>
+          <br />
+
+          <div>Email : <input type="email" name="myEmail" /></div>
+          <br />
+
+          <div>Date: <input type="date" name="myDate" /></div>
+          <br />
+
+          <div>Number: <input type="number" name="myNumber" /></div>
+          <br />
+
+          <div>
+            Are you Eligible: <input type="checkbox" name="myEligibility" />
+          </div>
+          <br />
+
+          <div>
+            Gender : Male <input type="radio" name="myGender" /> Female
+            <input type="radio" name="myGender" />
+          </div>
+          <br />
+          <div>
+            Write about yourself: <br />
+            <textarea name="myText" id="" cols="30" rows="10"></textarea>
+          </div>
+          <br />
+          <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+              <option value="lambor">Lambo</option>
+              <option value="ferr">ferrari</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <input type="submit" value="Submit Now" />
+          </div>
+          <br />
+          <div>
+            <input type="reset" value="Reset Now" />
+          </div>
+          <br />
+        </form>
+      
+
+      <!--Inline and Block Element-->
+     
+        <p style="border: 2px solid red">this is a paragraph</p>
+        <p style="border: 2px solid blue">this is also a paragraph</p>
+        <span style="border: 2px solid red"> this is a paragraph</span
+        ><span style="border: 2px solid blue"> this is also a paragraph</span>
+        <br />
+        <strong style="border: 2px solid red">this is a paragraph</strong
+        ><a style="border: 2px solid blue">this is also a paragraph</a>
+        <span style="border: 2px solid red"> this is a paragraph</span
+        ><span style="border: 2px solid blue"> this is also a paragraph</span>
+   
+
+      <!--Ids and Classes-->
+     
+        <div id="mainBox" class="redBg"></div>
+        <!-- Emmet -->
+        <!-- . is for class and # is for ID (e.g span.redBg, span#mainId) -->
+        <span class="redBg"></span>
+        <span id="mainId"></span>
+        <div class="redBg blackBorder anotherclass"></div>
+        <!-- Emmet takes div as default (e.g .blackBackground) -->
+        <div class="blackBackground"></div>
+        <!--Creating multiple Elements using Emmet  -->
+        <!-- span.myclass.myclass2.myclass * (any number)-->
+        <span class="myclass myclass2 myclass3">first</span>
+        <span class="myclass myclass2 myclass3">second</span>
+        <span class="myclass myclass2 myclass3">third</span>
+        <span class="myclass myclass2 myclass3">fourth</span>
+       
+       <!-- Entities -->
+       <div class="containor">
+        <p>This is a Paragraph</p>
+       </div>
+       <div class="containor">
+        <p>This is another &nbsp; Paragraph</p>
+        <p>This is another Paragraph &lt;p&gt;</p>
+        <p>Pound is written like this &pound;</p>
+        <p>copyright is written like this &copy;</p>
+       </div>
+  </body>
+</html>
