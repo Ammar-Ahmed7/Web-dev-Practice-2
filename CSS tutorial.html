@@ -14,7 +14,7 @@
     
     <style>
         body{
-            font-family: 'Ubuntu', sans-serif;
+           /* font-family: 'Ubuntu', sans-serif;*/
         }
     </style>
 
@@ -185,6 +185,47 @@
         width: 455px;
     }
    </style>
+
+   <!--This is for CSS Styling link and buttons and Pseudo selector-->
+   <style>
+    .container3{
+        border: 2px solid red;
+        background-color: rgb(186, 239, 148);
+        padding: 34px;
+        margin: 34px auto;
+        width: 666px;
+
+    }
+    .btn{
+        background-color: crimson;
+        padding: 6px;
+        border: none;
+        cursor: pointer;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+    #alink{
+        text-decoration: none;
+        color: black;
+    } 
+
+    /*Pseudo Selectors*/
+    #alink:hover{
+        color: rgb(107, 35, 35);
+        background-color: rgb(226, 203, 203);
+        border: 2px solid black;
+    }
+    #alink:visited{
+        background-color: yellow;
+    }
+    #alink:active{
+        background-color: darkblue;
+    }
+    .btn:hover{
+        background-color: yellow;
+        border: 2px solid black;
+    }
+   </style>
    
 </head>
 <body>
@@ -269,6 +310,15 @@
             <h3>Stationary</h3>
             <p id="stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ab quasi ad minus sit veniam, officiis officia fuga! Reprehenderit quidem beatae fugit nemo, laboriosam neque voluptatum ad ipsa libero tempora!</p>
         </div>
+    </div>
+      
+    <!--Pseudo selectors and more designing(styling links and buttons)-->
+    <h1>This is CSS styling links and buttons</h1>
+    <div class="container3" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis rem culpa tenetur officia ea doloribus error necessitatibus magnam. Amet, explicabo! Quia, soluta rem dolore, voluptates facilis cumque facere dicta repellendus numquam, voluptatibus ullam blanditiis!</p>
+        <a href="https://yahoo.com" id="alink" class="btn">Read mode</a>
+        <button class="btn">Contact us</button>
     </div>
 </body>
 </html>
