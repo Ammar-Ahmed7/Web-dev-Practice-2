@@ -226,6 +226,60 @@
         border: 2px solid black;
     }
    </style>
+  
+  
+  <!--This is for Navigation Menu-->
+   <style>
+    .navbar{
+        background-color: black;
+        border-radius: 30px;
+    }
+    /*For the background color to be red we had to use overflow because in .navbar li float: left causes it to overflow from the parent which is ul in this case*/
+    .navbar ul{
+        overflow: auto;
+    }
+    .navbar li{
+        float: left;
+        list-style: none;
+        margin: 13px 20px;
+        padding-top: 4px;
+        
+    }
+    .navbar li a{
+        padding: 3px 3px;
+        text-decoration: none;
+        color: white;
+        
+    }
+    .search{
+        float: right;
+        color: white;
+        margin: 13px 48px;
+    }
+    .navbar input{
+        border: 2px solid black;
+        border-radius: 14px;
+        padding: 3px 17px;
+    }
+   </style>
+
+   <!--This is for Display Properties-->
+   <style>
+    .top{
+      margin: auto;
+      border: 2px solid red;
+      width: 15%;
+    }
+    header img{
+        display:block;
+        margin: auto;
+        width: 34px;
+    }
+    header h3{
+        margin: 0;
+    }
+
+   </style>
    
 </head>
 <body>
@@ -266,6 +320,7 @@
     </div>
 
 
+
     <!--Height, width, border and Background-->
     <div>
         <h1>This is CSS Height, width, border and Background</h1>
@@ -276,6 +331,8 @@
         <p id="thirdPara">This is third Paragraph</p>
     </div>
     <br>
+
+
 
     <!--Box Model-->
     <h1>This is CSS Box Model</h1>
@@ -294,6 +351,8 @@
         <p id ="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod hic iure amet, ullam accusamus eligendi necessitatibus iusto magni minus soluta blanditiis voluptatum, iste unde laboriosam doloribus eius pariatur vel natus reprehenderit explicabo.</p>
     </div>
 
+
+
     <!--Float and Clear (Alignment)-->
     <h1>This is CSS Float and Clear</h1>
     <div class="container2">
@@ -311,7 +370,9 @@
             <p id="stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ab quasi ad minus sit veniam, officiis officia fuga! Reprehenderit quidem beatae fugit nemo, laboriosam neque voluptatum ad ipsa libero tempora!</p>
         </div>
     </div>
+
       
+
     <!--Pseudo selectors and more designing(styling links and buttons)-->
     <h1>This is CSS styling links and buttons</h1>
     <div class="container3" id="cont1">
@@ -320,5 +381,31 @@
         <a href="https://yahoo.com" id="alink" class="btn">Read mode</a>
         <button class="btn">Contact us</button>
     </div>
+
+
+
+    <!--Navigation Menu-->
+    <h1>This is CSS Navigation Menu</h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="searchbox" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <!--Display Properties(Block and Inline)-->
+    <h1>This is CSS Display Properties</h1>
+    <header class="top">
+        <img src="https://www.codewithharry.com/img/logo-blue.png" alt="">
+        <h3>This is my heading</h3>
+    </header>
 </body>
 </html>
