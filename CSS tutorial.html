@@ -262,9 +262,12 @@
         padding: 3px 17px;
     }
    </style>
-
+  
    <!--This is for Display Properties-->
    <style>
+     .cont{
+        overflow: auto;
+     }
     .top{
       margin: auto;
       border: 2px solid red;
@@ -276,9 +279,46 @@
         width: 34px;
     }
     header h3{
-        margin: 0;
+        text-align: center;
+        margin: 0px;
     }
+    .box{
+       
+        border: 4px solid black;
+        background-color: grey;
+        margin: 17px;
+        padding : 23px;
+        width: 30%;
+        float:left;
+       
+        
+    } 
+   </style>
 
+    <!--This is for Positions-->
+   <style>
+    .container5{
+        border: 2px solid black;
+        background-color: khaki;        
+    }
+    .boxes{
+        display:inline-block;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+    }
+    #box1{
+        /*Relative position means it will move with relation to its normal position or old position*/
+        /*absolute position means it will move with relation to its Parent*/
+        /*Fixed position means it will be fixed with accordance to scrolling*/
+        /*sticky position means it will be sticked*/
+
+        position: relative;
+        top:34px;
+        
+        
+    }
    </style>
    
 </head>
@@ -407,5 +447,36 @@
         <img src="https://www.codewithharry.com/img/logo-blue.png" alt="">
         <h3>This is my heading</h3>
     </header>
-</body>
+    <div class="cont">
+
+        <div class="container4">
+            <div class="box">
+                <h4 class="heading">This is a new heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis inventore esse perspiciatis placeat aut quod debitis quae qui porro tenetur minima ipsum, eaque, eveniet dolor provident amet culpa excepturi rerum non laudantium. Cumque natus temporibus vero nemo ab quibusdam odit quae quaerat similique soluta!</p>
+            </div>
+        </div>
+    <div class="container4">
+        <div class="box">
+            <h4 class="heading">This is a new heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis inventore esse perspiciatis placeat aut quod debitis quae qui porro tenetur minima ipsum, eaque, eveniet dolor provident amet culpa excepturi rerum non laudantium. Cumque natus temporibus vero nemo ab quibusdam odit quae quaerat similique soluta!</p>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="box">
+            <h4 class="heading">This is a new heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis inventore esse perspiciatis placeat aut quod debitis quae qui porro tenetur minima ipsum, eaque, eveniet dolor provident amet culpa excepturi rerum non laudantium. Cumque natus temporibus vero nemo ab quibusdam odit quae quaerat similique soluta!</p>
+        </div>
+    </div>
+</div>
+
+    
+    <!--Positions-->
+    <div class="container5">
+        <h1>This is CSS positions</h1>
+        <div class="boxes" id="box1">1</div>
+        <div class="boxes" id="box2">2</div>
+        <div class="boxes" id="box3">3</div>
+        <div class="boxes" id="box4">4</div>
+    </div>
+    </body>
 </html>
