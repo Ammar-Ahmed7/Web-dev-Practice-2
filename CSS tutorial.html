@@ -320,6 +320,61 @@
         
     }
    </style>
+
+   <!--This is for Flexbox-->
+   <style>
+    .container6{
+        height:766px;
+        width: 100%;
+        border: 2px solid black;
+
+        /*Flex properties for flex container*/
+        display: flex;
+        flex-direction: row;
+       /* flex-direction: column;
+        flex-direction: row-reverse;*/
+        flex-wrap: wrap;
+       /* flex-flow: row-reverse wrap;*/
+       
+       /*horizontally*/
+       justify-content: center;
+       justify-content: space-between;
+       justify-content: space-evenly;
+       justify-content: space-around;
+       
+       /*vertically aligns*/
+       align-items: center;
+       align-items: flex-start;
+      /* align-items: flex-end;*/
+    }
+    .items{
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 3px;
+    }
+    #items-1{
+         /*Flex properties for flex container*/
+         /*Higher the order, later it shows in the container*/
+         /*order: 2;*/
+
+         flex-grow: 2;
+
+         /*When flex-direction is in row then flex-basis will control width  */
+         /*When flex-direction is in column then flex-basis will control height  */
+         flex-basis: 320px;
+
+         align-self: center;
+    }
+    #items-2{
+
+    }
+    #items-3{
+
+    }
+   </style>
    
 </head>
 <body>
@@ -477,6 +532,18 @@
         <div class="boxes" id="box2">2</div>
         <div class="boxes" id="box3">3</div>
         <div class="boxes" id="box4">4</div>
+    </div>
+
+    <!--Flexbox-->
+    <br>
+    <h1>This is Flexbox</h1>
+    <div class="container6">
+        <div class="items" id="items-1">First Box</div>
+        <div class="items" id="items-2">Second Box</div>
+        <div class="items" id="items-3">Third box</div>
+     <!--   <div class="items" id="items-4">Fourth Box</div>
+        <div class="items" id="items-5">Fifth Box</div>
+        <div class="items" id="items-6">Sixth Box</div>-->
     </div>
     </body>
 </html>
