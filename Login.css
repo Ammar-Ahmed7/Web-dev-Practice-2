@@ -4,10 +4,24 @@
     box-sizing: border-box;
 }
 
-.wrapper{
+body{
  display: flex;
  justify-content: center;
  min-height: 100vh;
  align-items: center;
- background-color: rgb(9, 9, 41);
+ background-color: #081b29;
+}
+
+.wrapper{
+    display: flex;
+    border: 2px solid #0ef;
+    width: 560px;
+    height: 560px;
+    margin-right: 55%;
+    justify-content: center; 
+    align-items: center;
+}
+#log{
+    
+    margin-bottom: 10%;
 }
