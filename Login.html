@@ -6,26 +6,43 @@
     <title>Login page</title>
     <link rel="stylesheet" href="Login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="wrapper">
+        <span class="bg-animate"></span>
         <form action="#">
+            <div class="cont">
             <div>    
                 <h2 id="log">Login</h2>
             </div>
-            <div>
-                Username: <input type="text">
+            
+            <div id="user">
+         
+                 <input type="text" placeholder="Username">
                 <i class='bx bxs-user'></i>
             </div>
-            <div>
-                Password: <input type="password" name="" id="">
-                <i class='bx bxs-lock-alt'></i>
+            <div id="pass">
+                <input type="password" name="" placeholder="Password">
+                <i class='bx bxs-lock-alt' ></i>
             </div>
-            <div>
-                <button>Sign in</button>
+            <div >
+                <button type="submit" id="butt">Login</button>
             </div>
-            
+            <div id="sign">
+                <p>Don't have account? <a href="#">Sign up</a></p>
+            </div>
         </div>
-    </form>
+        </form>
+    </div>
+    <div class ="info">
+        <h2 id ="heading2">Welcome <br>Back!</h2>
+        <div>
+         <p id ="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, modi impedit.</p>
+        </div>
+        
+    </div>
 </body>
 </html>
