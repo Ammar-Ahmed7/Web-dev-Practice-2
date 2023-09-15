@@ -3,24 +3,32 @@
     padding: 0px;
     box-sizing: border-box;
     font-family:'Ubuntu';
+    
+   
 }
 
 body{
+    
  display: flex;
  justify-content: flex-start;
  min-height: 100vh;
  align-items: center;
  background-color: #081b29;
+ overflow: hidden;
+
+ 
 }
 
 .wrapper{
     display: flex;
     border: 2px solid #0ef;
-    width: 560px;
-    height: 560px;
+    border-right: none;
+    width: 617px;
+    height: 650px;
     justify-content:center; 
     align-items: center;
-    overflow: hidden;
+    
+    
     
 }
 .cont{
@@ -30,6 +38,7 @@ body{
     align-items: center;
     width: 500px;
     height: 500px;
+    
 }
 #log{
     display: flex;
@@ -40,6 +49,7 @@ body{
     color: white;
     font-size:40px;
     font-family: sans-serif;
+    
 }
 #user{
    position: relative;
@@ -47,6 +57,7 @@ body{
    color: antiquewhite;
    font-size: 20px;
    border-bottom: 3px solid white;
+   
 
 }
 #pass{
@@ -72,6 +83,7 @@ body{
    background: transparent;
    width: 300px;
    outline: none;
+   color: white;
 }
 ::placeholder{
     color: white;
@@ -113,42 +125,44 @@ input:focus::placeholder {
     display: flex;
     flex-direction: column;
     border: 2px solid #0ef;
-    height:560px;
-    width: 682px;
+    border-left: none;
+    height: 650px;
+    width: 757px;
     justify-content: center;
     text-align: right;
     padding: 0 40px 60px 190px;
+    
 }
 #heading2{
- font-size: 36px;
- color: white;
- text-transform: uppercase;
- line-height: 1.3;
- z-index: 1;
- position: relative;
- bottom: 196px;
+    font-size: 36px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.3;
+    z-index: 1;
+    position: relative;
+    bottom: 23px;
 }
 #para{
     color: white;
     position: relative;
-    bottom: 194px;
+    bottom: 13px;
     z-index: 1;
-    
    
 }
- .bg-animate{
+ #sheet{
+    overflow: hidden;
     display: flex;
-    border: 2px solid red;
-    height: 700px; 
-    width: 459px;
-   
+    height: 790px;
+    width: 1051px;
+    position: absolute;
+    top: -11px;
     background: linear-gradient(#0ef,#081b29);
-   
-
-  
-  
-  
-  
+    border: 3px solid #0ef;
+    transform: rotate(10deg) skewY(30deg);
+    transform-origin: bottom right;
+    right: 3px;
+    z-index: -2;
+    
 }
 
 
